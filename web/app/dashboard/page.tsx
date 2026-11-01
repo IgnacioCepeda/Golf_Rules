@@ -20,9 +20,9 @@ const ruleSections = [
   { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "/dashboard/bases-y-dropear", status: "Disponible" },
   { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "/dashboard/mesa-de-salida", status: "Disponible" },
   { title: "Área general", description: "Situaciones frecuentes fuera de bunkers, greens y áreas de penalización.", href: "/dashboard/area-general", status: "Disponible" },
-  { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "#", status: "Próximamente" },
-  { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "#", status: "Próximamente" },
-  { title: "Green", description: "Reglas al marcar, levantar y jugar la bola en el green.", href: "#", status: "Próximamente" },
+  { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "/dashboard/bunker", status: "Disponible" },
+  { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "/dashboard/areas-de-penalizacion", status: "Disponible" },
+  { title: "Green", description: "Reglas al marcar, levantar y jugar la bola en el green.", href: "/dashboard/green", status: "Disponible" },
 ]
 
 export default function Page() {
