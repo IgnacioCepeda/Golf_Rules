@@ -1,5 +1,5 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { FieldGuide } from "@/components/field-guide"
+import { BasicsDroppingSection } from "@/components/basics-dropping-section"
 import Image from "next/image"
 import {
   Breadcrumb,
@@ -74,7 +74,7 @@ export default function Page() {
               <p className="mt-2 text-sm leading-6 text-muted-foreground">Acceso rápido a las reglas que más consulta el grupo.</p>
             </article>
           </section>
-          <FieldGuide />
+          <BasicsDroppingSection />
         </main>
       </SidebarInset>
     </SidebarProvider>

@@ -39,7 +39,7 @@ const data = {
       title: "Reglas por situación",
       url: "#",
       items: [
-        { title: "Bases y dropear", url: "#" },
+        { title: "Bases y dropear", url: "/dashboard#bases-y-dropear" },
         { title: "Mesa de salida", url: "#", isActive: true },
         { title: "Área general", url: "#" },
         { title: "Bunker", url: "#" },
