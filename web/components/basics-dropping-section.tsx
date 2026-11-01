@@ -64,7 +64,7 @@ const topics = [
   {
     title: "¿Cuándo volver a dropear?",
     rule: "Regla 14.3c",
-    image: "/rules/bases-y-dropear/volver-a-dropear.png",
+    image: "/rules/realistas/volver-a-dropear-realista.jpg",
     text: "Si una bola fue dropeada correctamente pero queda en reposo fuera del área de alivio, debes dropear otra vez. Si el segundo dropaje correcto también queda fuera, coloca una bola en el punto donde tocó por primera vez el terreno en el segundo dropaje.",
   },
   {
@@ -76,7 +76,7 @@ const topics = [
   {
     title: "Dropear de manera incorrecta",
     rule: "Regla 14.3b",
-    image: "/rules/bases-y-dropear/dropeo-incorrecto.png",
+    image: "/rules/realistas/dropeo-incorrecto-realista.jpg",
     text: "Si la bola no fue soltada por el jugador, no cayó recta desde la altura de la rodilla o no tocó primero el terreno en el área requerida, el dropaje es incorrecto. Corrígelo antes de jugar; no hay límite de veces para repetir un dropaje incorrecto.",
   },
 ] as const
