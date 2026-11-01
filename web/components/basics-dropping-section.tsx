@@ -40,7 +40,7 @@ const topics = [
   {
     title: "Caddie",
     rule: "Regla 10.3",
-    image: "/rules/bases-y-dropear/caddie.png",
+    image: "/rules/realistas/caddie-realista.jpg",
     text: "Un caddie puede ayudar bajo las Reglas, pero el jugador es responsable de las acciones de su caddie. El caddie no puede estar deliberadamente en o cerca de una extensión de la línea de juego detrás de la bola mientras el jugador toma el stance.",
   },
   {
