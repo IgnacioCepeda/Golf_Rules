@@ -22,7 +22,7 @@ const topics = [
   {
     title: "Embocar la bola y usar la misma bola",
     rule: "Reglas 3.3c y 6.3",
-    image: "/rules/bases-y-dropear/embocar-y-bola.png",
+    image: "/rules/realistas/embocar-bola-realista.jpg",
     text: "En juego por golpes debes completar el hoyo embocando, salvo que una Regla diga otra cosa. Se juega la misma bola desde el área de salida hasta embocarla, excepto cuando las Reglas permiten o exigen sustituirla.",
   },
   {
@@ -34,7 +34,7 @@ const topics = [
   {
     title: "Consejo y línea de juego",
     rule: "Regla 10.2a",
-    image: "/rules/bases-y-dropear/consejo.png",
+    image: "/rules/realistas/informacion-distancia-realista.jpg",
     text: "Puedes recibir información pública, como distancias o ubicación de obstáculos, pero no consejo que pueda influir en la elección de palo, golpe o forma de jugar. Antes de ejecutar un golpe, no debes colocar objetos ni tener ayuda prohibida para apuntar.",
   },
   {
