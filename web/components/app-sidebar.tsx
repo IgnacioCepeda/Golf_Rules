@@ -39,8 +39,8 @@ const data = {
       title: "Reglas por situación",
       url: "#",
       items: [
-        { title: "Bases y dropear", url: "/dashboard#bases-y-dropear" },
-        { title: "Mesa de salida", url: "/dashboard#mesa-de-salida" },
+        { title: "Bases y dropear", url: "/dashboard/bases-y-dropear" },
+        { title: "Mesa de salida", url: "/dashboard/mesa-de-salida" },
         { title: "Área general", url: "#" },
         { title: "Bunker", url: "#" },
         { title: "Áreas de penalización", url: "#" },
@@ -58,7 +58,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton size="lg" render={<a href="#" />}>
+            <SidebarMenuButton size="lg" render={<a href="/dashboard" />}>
               <div className="relative aspect-square size-8 overflow-hidden rounded-lg bg-black">
                 <Image
                   src="/la-liga-ycc-logo.png"

@@ -1,6 +1,4 @@
 import { AppSidebar } from "@/components/app-sidebar"
-import { BasicsDroppingSection } from "@/components/basics-dropping-section"
-import { TeeingAreaSection } from "@/components/teeing-area-section"
 import Image from "next/image"
 import {
   Breadcrumb,
@@ -18,8 +16,8 @@ import {
 } from "@/components/ui/sidebar"
 
 const ruleSections = [
-  { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "#bases-y-dropear", status: "Disponible" },
-  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "#mesa-de-salida", status: "Disponible" },
+  { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "/dashboard/bases-y-dropear", status: "Disponible" },
+  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "/dashboard/mesa-de-salida", status: "Disponible" },
   { title: "Área general", description: "Situaciones frecuentes fuera de bunkers, greens y áreas de penalización.", href: "#", status: "Próximamente" },
   { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "#", status: "Próximamente" },
   { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "#", status: "Próximamente" },
@@ -40,7 +38,7 @@ export default function Page() {
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem className="hidden md:block">
-                <BreadcrumbLink href="#">La Liga</BreadcrumbLink>
+                <BreadcrumbLink href="/dashboard">La Liga</BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator className="hidden md:block" />
               <BreadcrumbItem>
@@ -53,14 +51,14 @@ export default function Page() {
           <section className="overflow-hidden rounded-2xl bg-black text-emerald-50">
             <div className="flex flex-col items-center px-6 py-8 text-center md:px-10 md:py-10">
               <div className="relative h-28 w-44 shrink-0 md:h-32 md:w-52">
-              <Image
-                src="/la-liga-ycc-logo.png"
-                alt="La Liga YCC"
-                fill
-                priority
-                sizes="208px"
-                className="object-contain"
-              />
+                <Image
+                  src="/la-liga-ycc-logo.png"
+                  alt="La Liga YCC"
+                  fill
+                  priority
+                  sizes="208px"
+                  className="object-contain"
+                />
               </div>
               <h1 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Reglas claras para disfrutar mejor cada ronda.</h1>
               <p className="mt-4 max-w-2xl text-base leading-7 text-emerald-300 md:text-lg">Consulta una situación de juego, entiende el procedimiento y juega con confianza.</p>
@@ -83,8 +81,6 @@ export default function Page() {
               ))}
             </div>
           </section>
-          <BasicsDroppingSection />
-          <TeeingAreaSection />
         </main>
       </SidebarInset>
     </SidebarProvider>
