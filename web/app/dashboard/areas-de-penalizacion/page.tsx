@@ -1,5 +1,6 @@
 import { RuleTopicsSection } from "@/components/rule-topics-section"
 import { RulesPageLayout } from "@/components/rules-page-layout"
+import { SectionNavigation } from "@/components/section-navigation"
 
 const topics = [
   { title: "Delimitación", rule: "Definición de área de penalización", image: "/rules/areas-de-penalizacion/delimitacion.png", description: "Las áreas de penalización se identifican normalmente con estacas o líneas rojas o amarillas. Incluyen el suelo y todo lo que está dentro de su borde; el agua no es necesaria para que exista un área de penalización." },
@@ -16,4 +17,4 @@ const topics = [
   { title: "Bola injugable", rule: "Regla 19.1", image: "/rules/areas-de-penalizacion/injugable.png", description: "No puedes declarar una bola injugable dentro de un área de penalización. Puedes jugarla como reposa o usar las opciones de alivio con penalización de la Regla 17." },
 ] as const
 
-export default function PenaltyAreasPage() { return <RulesPageLayout title="Áreas de penalidad (lagos de agua)"><RuleTopicsSection title="Áreas de penalidad (lagos de agua)" intro="Identifica el color del área y elige correctamente tu opción de alivio." topics={topics} /><nav aria-label="Navegación entre secciones" className="flex justify-between"><a href="/dashboard/bunker" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">← Bunker</a><a href="/dashboard/green" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">Green →</a></nav></RulesPageLayout> }
+export default function PenaltyAreasPage() { return <RulesPageLayout title="Áreas de penalidad (lagos de agua)"><RuleTopicsSection title="Áreas de penalidad (lagos de agua)" intro="Identifica el color del área y elige correctamente tu opción de alivio." topics={topics} /><SectionNavigation previous={{ href: "/dashboard/bunker", label: "Bunker" }} next={{ href: "/dashboard/green", label: "Green" }} /></RulesPageLayout> }

@@ -1,5 +1,6 @@
 import { RuleTopicsSection } from "@/components/rule-topics-section"
 import { RulesPageLayout } from "@/components/rules-page-layout"
+import { SectionNavigation } from "@/components/section-navigation"
 
 const topics = [
   { title: "Delimitación del bunker", rule: "Definición de bunker", image: "/rules/bunker/delimitacion.png", description: "Un bunker es un área preparada de arena. El borde se define por donde el suelo ha sido cortado hacia abajo; si parte de la bola toca arena dentro del borde, está en el bunker." },
@@ -16,4 +17,4 @@ const topics = [
   { title: "Bola equivocada", rule: "Regla 6.3c", image: "/rules/bunker/bola-equivocada.png", description: "No juegues una bola equivocada. En juego por golpes la penalización es dos golpes y debes corregir jugando la bola correcta; los golpes a la bola equivocada no cuentan." },
 ] as const
 
-export default function BunkerPage() { return <RulesPageLayout title="Bunker (trampas de arena)"><RuleTopicsSection title="Bunker (trampas de arena)" intro="Procedimientos y opciones de alivio cuando tu bola está en la arena." topics={topics} /><nav aria-label="Navegación entre secciones" className="flex justify-between"><a href="/dashboard/area-general" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">← Área general del campo</a><a href="/dashboard/areas-de-penalizacion" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">Áreas de penalidad →</a></nav></RulesPageLayout> }
+export default function BunkerPage() { return <RulesPageLayout title="Bunker (trampas de arena)"><RuleTopicsSection title="Bunker (trampas de arena)" intro="Procedimientos y opciones de alivio cuando tu bola está en la arena." topics={topics} /><SectionNavigation previous={{ href: "/dashboard/area-general", label: "Área general" }} next={{ href: "/dashboard/areas-de-penalizacion", label: "Áreas de penalidad" }} /></RulesPageLayout> }

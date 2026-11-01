@@ -1,5 +1,6 @@
 import { RuleTopicsSection } from "@/components/rule-topics-section"
 import { RulesPageLayout } from "@/components/rules-page-layout"
+import { SectionNavigation } from "@/components/section-navigation"
 
 const topics = [
   { title: "Green del hoyo que juegas", rule: "Regla 13.1", image: "/rules/green/green-del-hoyo.png", description: "En el green de tu hoyo puedes marcar, levantar, limpiar y reponer la bola. También puedes reparar daños y quitar arena y tierra suelta." },
@@ -19,4 +20,4 @@ const topics = [
   { title: "Putt desde lugar equivocado", rule: "Regla 14.7", image: "/rules/green/putt-equivocado.png", description: "Si juegas desde un lugar equivocado, detente y corrige el procedimiento. En juego por golpes, una infracción grave puede requerir corregir antes de iniciar el siguiente hoyo." },
 ] as const
 
-export default function GreenPage() { return <RulesPageLayout title="Green"><RuleTopicsSection title="Green" intro="Reglas para marcar, reparar y jugar la bola en el green del hoyo." topics={topics} /><nav aria-label="Navegación entre secciones" className="flex"><a href="/dashboard/areas-de-penalizacion" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 hover:bg-emerald-50">← Áreas de penalización</a></nav></RulesPageLayout> }
+export default function GreenPage() { return <RulesPageLayout title="Green"><RuleTopicsSection title="Green" intro="Reglas para marcar, reparar y jugar la bola en el green del hoyo." topics={topics} /><SectionNavigation previous={{ href: "/dashboard/areas-de-penalizacion", label: "Áreas de penalidad" }} /></RulesPageLayout> }
