@@ -16,7 +16,7 @@ const topics = [
   { title: "Bola equivocada", rule: "Regla 6.3c", image: "/rules/green/bola-equivocada.png", description: "En juego por golpes, jugar una bola equivocada implica dos golpes de penalización y debes corregir con la bola correcta antes de terminar el hoyo." },
   { title: "Bola dañada", rule: "Regla 4.2c", image: "/rules/green/bola-danada.png", description: "Si la bola se corta o agrieta significativamente durante el hoyo, puedes sustituirla al reponerla. Una rayadura o desgaste normal no autoriza a cambiarla." },
   { title: "La bola se mueve al preparar el golpe", rule: "Regla 13.1d", image: "/rules/green/preparar-golpe.png", description: "Si causas accidentalmente que tu bola o marcador se mueva en el green, no hay penalización; repón la bola o marcador antes de jugar." },
-  { title: "Bola sobre el borde del hoyo", rule: "Regla 13.3a", image: "/rules/green/bola-sobre-borde.png", description: "Da a la bola un tiempo razonable para caer al hoyo, hasta diez segundos adicionales tras llegar al borde. Si cae después, cuenta el golpe anterior más uno." },
+  { title: "Bola sobre el borde del hoyo", rule: "Regla 13.3a", image: "/rules/realistas/bola-sobre-borde-realista.jpg", description: "Da a la bola un tiempo razonable para caer al hoyo, hasta diez segundos adicionales tras llegar al borde. Si cae después, cuenta el golpe anterior más uno." },
   { title: "Putt desde lugar equivocado", rule: "Regla 14.7", image: "/rules/green/putt-equivocado.png", description: "Si juegas desde un lugar equivocado, detente y corrige el procedimiento. En juego por golpes, una infracción grave puede requerir corregir antes de iniciar el siguiente hoyo." },
 ] as const
 

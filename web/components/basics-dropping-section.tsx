@@ -58,7 +58,7 @@ const topics = [
   {
     title: "Dropear correctamente",
     rule: "Regla 14.3",
-    image: "/rules/bases-y-dropear/dropear-correctamente.png",
+    image: "/rules/realistas/dropear-correctamente-realista.jpg",
     text: "Identifica el punto de referencia y el área de alivio de la Regla aplicable. El jugador debe soltar la bola recta hacia abajo desde la altura de la rodilla; debe tocar primero el terreno dentro del área de alivio (o la línea, cuando aplique) y quedar en reposo en el área.",
   },
   {
