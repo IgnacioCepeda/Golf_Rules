@@ -3,7 +3,7 @@ import { RulesPageLayout } from "@/components/rules-page-layout"
 import { SectionNavigation } from "@/components/section-navigation"
 
 const topics = [
-  { title: "Green del hoyo que juegas", rule: "Regla 13.1", image: "/rules/green/green-del-hoyo.png", description: "En el green de tu hoyo puedes marcar, levantar, limpiar y reponer la bola. También puedes reparar daños y quitar arena y tierra suelta." },
+  { title: "Green del hoyo que juegas", rule: "Regla 13.1", image: "/rules/realistas/reparar-green-realista.jpg", description: "En el green de tu hoyo puedes marcar, levantar, limpiar y reponer la bola. También puedes reparar daños y quitar arena y tierra suelta." },
   { title: "Green equivocado", rule: "Regla 13.1f", image: "/rules/green/green-equivocado.png", description: "No juegues desde un green equivocado. Toma alivio completo sin penalización desde el punto más cercano de alivio, dentro de un palo y no más cerca del hoyo." },
   { title: "Bola empotrada en el green", rule: "Regla 13.1c", image: "/rules/green/bola-empotrada.png", description: "Una bola empotrada o con una marca de impacto en el green puede repararse. La bola puede marcarse, levantarse, limpiarse y reponerse en su punto." },
   { title: "Orden de juego", rule: "Regla 6.4b", image: "/rules/green/orden-juego.png", description: "En juego por golpes normalmente juega primero quien está más lejos del hoyo; está permitido jugar fuera de turno si no hay acuerdo para ayudar a un jugador." },
