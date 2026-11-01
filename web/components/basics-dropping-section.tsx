@@ -28,7 +28,7 @@ const topics = [
   {
     title: "Bola dañada",
     rule: "Regla 4.2c",
-    image: "/rules/bases-y-dropear/bola-danada.png",
+    image: "/rules/realistas/bola-danada-realista.jpg",
     text: "Puedes sustituir una bola únicamente si es evidente que se ha cortado o rajado durante el hoyo. Un raspón, rayón o cambio de pintura no basta; si procede sustituirla, debes colocar otra bola en el punto original.",
   },
   {
@@ -52,7 +52,7 @@ const topics = [
   {
     title: "Interrupción del juego / tormenta",
     rule: "Regla 5.7",
-    image: "/rules/bases-y-dropear/interrupcion.png",
+    image: "/rules/realistas/tormenta-realista.jpg",
     text: "Si el Comité suspende el juego por peligro inminente, debes detenerlo de inmediato. Cuando una bola está en juego, no la levantes salvo que las Reglas lo permitan; antes de reanudar, confirma la posición y el procedimiento aplicable.",
   },
   {
