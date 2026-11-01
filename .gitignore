@@ -1,0 +1,4 @@
+.DS_Store
+web/.next/
+web/node_modules/
+web/.vercel/
