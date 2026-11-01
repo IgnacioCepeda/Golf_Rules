@@ -24,14 +24,14 @@ const topics = [
 ] as const
 
 export function TeeingAreaSection() {
-  const [openTopic, setOpenTopic] = React.useState<string>(topics[0].title)
+  const [openTopic, setOpenTopic] = React.useState<string>("")
 
   return (
     <section id="mesa-de-salida" className="scroll-mt-8 rounded-2xl border bg-card p-5 shadow-sm md:p-7">
       <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
         <div>
           <p className="text-sm font-medium tracking-[0.18em] text-emerald-700 uppercase">Resolver en el campo</p>
-          <h2 className="mt-2 text-2xl font-semibold tracking-tight">Mesa de salida</h2>
+          <h2 className="mt-2 text-2xl font-semibold tracking-tight">Mesas de salida</h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-muted-foreground">Antes de comenzar el hoyo, revisa la situación y aplica el procedimiento correcto.</p>
         </div>
         <span className="text-sm text-muted-foreground">14 situaciones</span>

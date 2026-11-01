@@ -16,12 +16,15 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
-const ruleSections = [
+const conceptSections = [
   { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "/dashboard/bases-y-dropear", status: "Disponible" },
-  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "/dashboard/mesa-de-salida", status: "Disponible" },
-  { title: "Área general", description: "Situaciones frecuentes fuera de bunkers, greens y áreas de penalización.", href: "/dashboard/area-general", status: "Disponible" },
-  { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "/dashboard/bunker", status: "Disponible" },
-  { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "/dashboard/areas-de-penalizacion", status: "Disponible" },
+]
+
+const placeSections = [
+  { title: "Mesas de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "/dashboard/mesa-de-salida", status: "Disponible" },
+  { title: "Área general del campo", description: "Situaciones generales en Fairway, Rough, Waste Area, Barbas, Fringe, etc. Es decir, todas las áreas del campo con excepción de Bunkers de Arena, Green, Mesas de salida y Áreas de penalidad como los lagos y zonas de vegetación marcadas con estacas rojas.", href: "/dashboard/area-general", status: "Disponible" },
+  { title: "Bunker (trampas de arena)", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "/dashboard/bunker", status: "Disponible" },
+  { title: "Áreas de penalidad (lagos de agua)", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "/dashboard/areas-de-penalizacion", status: "Disponible" },
   { title: "Green", description: "Reglas al marcar, levantar y jugar la bola en el green.", href: "/dashboard/green", status: "Disponible" },
 ]
 
@@ -73,8 +76,21 @@ export default function Page() {
               <p className="text-sm font-medium tracking-[0.18em] text-emerald-700 uppercase">Resolver en el campo</p>
               <h2 id="secciones-principales" className="mt-1 text-2xl font-semibold tracking-tight">Secciones principales</h2>
             </div>
+            <p className="mb-2 text-xs font-semibold tracking-[0.18em] text-muted-foreground uppercase">Conceptos generales</p>
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {ruleSections.map((section) => (
+              {conceptSections.map((section) => (
+                <a key={section.title} href={section.href} className="group rounded-xl border bg-card p-5 shadow-sm transition hover:border-emerald-500 hover:bg-emerald-50/50 focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:outline-none">
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="text-lg font-semibold group-hover:text-emerald-800">{section.title}</h3>
+                    <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${section.status === "Disponible" ? "bg-emerald-100 text-emerald-800" : "bg-muted text-muted-foreground"}`}>{section.status}</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{section.description}</p>
+                </a>
+              ))}
+            </div>
+            <p className="mt-7 mb-2 text-xs font-semibold tracking-[0.18em] text-muted-foreground uppercase">¿En dónde estás?</p>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {placeSections.map((section) => (
                 <a key={section.title} href={section.href} className="group rounded-xl border bg-card p-5 shadow-sm transition hover:border-emerald-500 hover:bg-emerald-50/50 focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:outline-none">
                   <div className="flex items-center justify-between gap-3">
                     <h3 className="text-lg font-semibold group-hover:text-emerald-800">{section.title}</h3>

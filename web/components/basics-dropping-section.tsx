@@ -82,7 +82,7 @@ const topics = [
 ] as const
 
 export function BasicsDroppingSection() {
-  const [openTopic, setOpenTopic] = React.useState<string | null>(topics[0].title)
+  const [openTopic, setOpenTopic] = React.useState<string | null>(null)
 
   return (
     <section id="bases-y-dropear" className="scroll-mt-8 rounded-2xl border bg-card p-5 shadow-sm md:p-7">

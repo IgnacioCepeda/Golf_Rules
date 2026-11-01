@@ -6,7 +6,7 @@ export default function BasicsDroppingPage() {
     <RulesPageLayout title="Bases y dropear">
       <BasicsDroppingSection />
       <nav aria-label="Navegación entre secciones" className="flex justify-end">
-        <a href="/dashboard/mesa-de-salida" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50">Mesa de salida →</a>
+        <a href="/dashboard/mesa-de-salida" className="rounded-lg border px-4 py-2 text-sm font-semibold text-emerald-800 transition hover:bg-emerald-50">Mesas de salida →</a>
       </nav>
     </RulesPageLayout>
   )
