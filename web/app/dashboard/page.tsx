@@ -16,6 +16,15 @@ import {
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 
+const ruleSections = [
+  { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "#bases-y-dropear", status: "Disponible" },
+  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "#", status: "Próximamente" },
+  { title: "Área general", description: "Situaciones frecuentes fuera de bunkers, greens y áreas de penalización.", href: "#", status: "Próximamente" },
+  { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "#", status: "Próximamente" },
+  { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "#", status: "Próximamente" },
+  { title: "Green", description: "Reglas al marcar, levantar y jugar la bola en el green.", href: "#", status: "Próximamente" },
+]
+
 export default function Page() {
   return (
     <SidebarProvider>
@@ -40,39 +49,38 @@ export default function Page() {
           </Breadcrumb>
         </header>
         <main className="flex flex-1 flex-col gap-6 p-4 md:p-8">
-          <section className="grid overflow-hidden rounded-2xl bg-black text-emerald-50 md:grid-cols-[1fr_280px]">
-            <div className="px-6 py-10 md:px-10">
-              <p className="text-sm font-medium tracking-[0.2em] text-emerald-300 uppercase">La Liga YCC</p>
-              <h1 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight md:text-5xl">Reglas claras para disfrutar mejor cada ronda.</h1>
-              <p className="mt-4 max-w-xl text-base leading-7 text-emerald-100 md:text-lg">Consulta una situación de juego, entiende el procedimiento y juega con confianza.</p>
-            </div>
-            <div className="relative min-h-52 border-t border-white/10 md:min-h-full md:border-t-0 md:border-l">
+          <section className="overflow-hidden rounded-2xl bg-black text-emerald-50">
+            <div className="flex flex-col items-center px-6 py-8 text-center md:px-10 md:py-10">
+              <div className="relative h-28 w-44 shrink-0 md:h-32 md:w-52">
               <Image
                 src="/la-liga-ycc-logo.png"
                 alt="La Liga YCC"
                 fill
                 priority
-                sizes="(min-width: 768px) 280px, 100vw"
-                className="object-contain p-5"
+                sizes="208px"
+                className="object-contain"
               />
+              </div>
+              <h1 className="mt-5 max-w-3xl text-3xl font-semibold tracking-tight md:text-5xl">Reglas claras para disfrutar mejor cada ronda.</h1>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-emerald-300 md:text-lg">Consulta una situación de juego, entiende el procedimiento y juega con confianza.</p>
             </div>
           </section>
-          <section className="grid gap-4 md:grid-cols-3">
-            <article className="rounded-xl border bg-card p-5 shadow-sm">
-              <p className="text-sm font-medium text-muted-foreground">Primer objetivo</p>
-              <h2 className="mt-2 text-xl font-semibold">Resolver en el campo</h2>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">Fichas breves y visuales para situaciones frecuentes.</p>
-            </article>
-            <article className="rounded-xl border bg-card p-5 shadow-sm">
-              <p className="text-sm font-medium text-muted-foreground">Contenido</p>
-              <h2 className="mt-2 text-xl font-semibold">Reglamento actualizado</h2>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">La taxonomía heredada se revisará con las Reglas de Golf vigentes.</p>
-            </article>
-            <article className="rounded-xl border bg-card p-5 shadow-sm">
-              <p className="text-sm font-medium text-muted-foreground">Próximamente</p>
-              <h2 className="mt-2 text-xl font-semibold">Búsqueda y favoritos</h2>
-              <p className="mt-2 text-sm leading-6 text-muted-foreground">Acceso rápido a las reglas que más consulta el grupo.</p>
-            </article>
+          <section aria-labelledby="secciones-principales">
+            <div className="mb-4">
+              <p className="text-sm font-medium tracking-[0.18em] text-emerald-700 uppercase">Resolver en el campo</p>
+              <h2 id="secciones-principales" className="mt-1 text-2xl font-semibold tracking-tight">Secciones principales</h2>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {ruleSections.map((section) => (
+                <a key={section.title} href={section.href} className="group rounded-xl border bg-card p-5 shadow-sm transition hover:border-emerald-500 hover:bg-emerald-50/50 focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:outline-none">
+                  <div className="flex items-center justify-between gap-3">
+                    <h3 className="text-lg font-semibold group-hover:text-emerald-800">{section.title}</h3>
+                    <span className={`rounded-full px-2.5 py-1 text-xs font-medium ${section.status === "Disponible" ? "bg-emerald-100 text-emerald-800" : "bg-muted text-muted-foreground"}`}>{section.status}</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-6 text-muted-foreground">{section.description}</p>
+                </a>
+              ))}
+            </div>
           </section>
           <BasicsDroppingSection />
         </main>

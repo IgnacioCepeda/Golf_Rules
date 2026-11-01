@@ -23,7 +23,7 @@ import {
   SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { MinusIcon, PlusIcon } from "lucide-react"
+import { BookOpenCheckIcon, HeartIcon, MinusIcon, PlusIcon } from "lucide-react"
 
 const data = {
   navMain: [
@@ -48,14 +48,6 @@ const data = {
         { title: "Green", url: "#" },
         { title: "Bola movida", url: "#" },
         { title: "Bola en movimiento", url: "#" },
-      ],
-    },
-    {
-      title: "Consulta",
-      url: "#",
-      items: [
-        { title: "Definiciones", url: "#" },
-        { title: "Etiqueta y ritmo de juego", url: "#" },
       ],
     },
   ],
@@ -124,6 +116,18 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton render={<a href="#" />}>
+              <BookOpenCheckIcon />
+              Reglamento actualizado
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton render={<a href="#" />}>
+              <HeartIcon />
+              Favoritos
+            </SidebarMenuButton>
+          </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton render={<a href="/acerca-de" />}>
               Acerca de
