@@ -41,7 +41,7 @@ const data = {
       items: [
         { title: "Bases y dropear", url: "/dashboard/bases-y-dropear" },
         { title: "Mesa de salida", url: "/dashboard/mesa-de-salida" },
-        { title: "Área general", url: "#" },
+        { title: "Área general", url: "/dashboard/area-general" },
         { title: "Bunker", url: "#" },
         { title: "Áreas de penalización", url: "#" },
         { title: "Fuera de límites y provisional", url: "#" },
