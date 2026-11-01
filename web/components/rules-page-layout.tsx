@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/breadcrumb"
 import { Separator } from "@/components/ui/separator"
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
+import { HomeIcon } from "lucide-react"
 import type { ReactNode } from "react"
 
 type RulesPageLayoutProps = {
@@ -33,6 +34,9 @@ export function RulesPageLayout({ title, children }: RulesPageLayoutProps) {
               <BreadcrumbItem><BreadcrumbPage>{title}</BreadcrumbPage></BreadcrumbItem>
             </BreadcrumbList>
           </Breadcrumb>
+          <a href="/dashboard" aria-label="Volver al menú principal" title="Menú principal" className="ml-auto inline-flex size-9 items-center justify-center rounded-md text-emerald-800 transition hover:bg-emerald-50 focus-visible:ring-2 focus-visible:ring-emerald-600 focus-visible:outline-none">
+            <HomeIcon className="size-5" />
+          </a>
         </header>
         <main className="flex flex-1 flex-col gap-6 p-4 md:p-8">{children}</main>
       </SidebarInset>
