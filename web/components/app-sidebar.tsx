@@ -40,7 +40,7 @@ const data = {
       url: "#",
       items: [
         { title: "Bases y dropear", url: "/dashboard#bases-y-dropear" },
-        { title: "Mesa de salida", url: "#", isActive: true },
+        { title: "Mesa de salida", url: "/dashboard#mesa-de-salida" },
         { title: "Área general", url: "#" },
         { title: "Bunker", url: "#" },
         { title: "Áreas de penalización", url: "#" },

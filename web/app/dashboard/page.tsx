@@ -1,5 +1,6 @@
 import { AppSidebar } from "@/components/app-sidebar"
 import { BasicsDroppingSection } from "@/components/basics-dropping-section"
+import { TeeingAreaSection } from "@/components/teeing-area-section"
 import Image from "next/image"
 import {
   Breadcrumb,
@@ -18,7 +19,7 @@ import {
 
 const ruleSections = [
   { title: "Bases y dropear", description: "Principios esenciales, alivio y el procedimiento correcto para dropear.", href: "#bases-y-dropear", status: "Disponible" },
-  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "#", status: "Próximamente" },
+  { title: "Mesa de salida", description: "Cómo iniciar el hoyo, corregir errores y jugar desde el área de salida.", href: "#mesa-de-salida", status: "Disponible" },
   { title: "Área general", description: "Situaciones frecuentes fuera de bunkers, greens y áreas de penalización.", href: "#", status: "Próximamente" },
   { title: "Bunker", description: "Opciones de alivio y restricciones al jugar desde la arena.", href: "#", status: "Próximamente" },
   { title: "Áreas de penalización", description: "Procedimientos para bolas en áreas amarillas y rojas.", href: "#", status: "Próximamente" },
@@ -83,6 +84,7 @@ export default function Page() {
             </div>
           </section>
           <BasicsDroppingSection />
+          <TeeingAreaSection />
         </main>
       </SidebarInset>
     </SidebarProvider>
