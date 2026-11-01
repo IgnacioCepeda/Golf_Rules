@@ -10,7 +10,7 @@ const topics = [
   {
     title: "Jugar la bola como reposa",
     rule: "Regla 1",
-    image: "/rules/bases-y-dropear/jugar-como-reposa.png",
+    image: "/rules/realistas/jugar-como-reposa-realista.jpg",
     text: "El principio inicial es jugar el campo como se encuentra y la bola como reposa. No se mejora la posición de la bola, el área del stance, el swing previsto o la línea de juego, salvo que una Regla permita hacerlo.",
   },
   {
@@ -46,7 +46,7 @@ const topics = [
   {
     title: "Practicar en el campo",
     rule: "Reglas 5.2 y 5.5",
-    image: "/rules/bases-y-dropear/practica.png",
+    image: "/rules/realistas/practicar-chip-realista.jpg",
     text: "Antes de una ronda, las posibilidades de práctica dependen del formato de juego. Durante una ronda no puedes hacer golpes de práctica mientras juegas un hoyo; existen excepciones limitadas, por ejemplo practicar putt o chip cerca del green recién terminado.",
   },
   {
