@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { HeartIcon } from "lucide-react"
+import { StarIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
@@ -54,8 +54,8 @@ export function FavoriteButton({ favorite }: { favorite: FavoriteRule }) {
   }
 
   return (
-    <Button type="button" variant={isFavorite ? "default" : "outline"} size="sm" onClick={toggleFavorite} className={isFavorite ? "bg-rose-600 hover:bg-rose-700" : "border-rose-200 text-rose-700 hover:bg-rose-50 hover:text-rose-800"}>
-      <HeartIcon className={`size-4 ${isFavorite ? "fill-current" : ""}`} />
+    <Button type="button" variant={isFavorite ? "default" : "outline"} size="sm" onClick={toggleFavorite} className={isFavorite ? "bg-amber-500 text-amber-950 hover:bg-amber-400" : "border-amber-300 text-amber-700 hover:bg-amber-50 hover:text-amber-800"}>
+      <StarIcon className={`size-4 ${isFavorite ? "fill-current" : ""}`} />
       {isFavorite ? "En favoritas" : "Guardar en favoritas"}
     </Button>
   )

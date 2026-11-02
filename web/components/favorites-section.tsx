@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import * as React from "react"
-import { ExternalLinkIcon, HeartIcon } from "lucide-react"
+import { ExternalLinkIcon, StarIcon } from "lucide-react"
 
 import { FavoriteButton, favoriteId, getFavorites, type FavoriteRule, updateEvent } from "@/components/favorite-button"
 
@@ -24,7 +24,7 @@ export function FavoritesSection() {
         <p className="max-w-2xl text-sm leading-6 text-muted-foreground">Estas situaciones se guardan solamente en este dispositivo.</p>
       </div>
       {favorites.length === 0 ? (
-        <div className="mt-6 rounded-xl border border-dashed p-8 text-center text-sm text-muted-foreground"><HeartIcon className="mx-auto mb-3 size-6 text-rose-500" />Aún no tienes situaciones favoritas. Abre una situación y toca el corazón para guardarla aquí.</div>
+        <div className="mt-6 rounded-xl border border-dashed p-8 text-center text-sm text-muted-foreground"><StarIcon className="mx-auto mb-3 size-6 fill-amber-400 text-amber-500" />Aún no tienes situaciones favoritas. Abre una situación y toca la estrella para guardarla aquí.</div>
       ) : (
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {favorites.map((favorite) => (

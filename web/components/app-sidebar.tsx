@@ -23,7 +23,7 @@ import {
   SidebarMenuSubItem,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { BookOpenCheckIcon, HeartIcon, MinusIcon, PlusIcon } from "lucide-react"
+import { BookOpenCheckIcon, MinusIcon, PlusIcon, StarIcon } from "lucide-react"
 
 const data = {
   navMain: [
@@ -123,7 +123,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton render={<a href="/favoritas" />}>
-              <HeartIcon />
+              <StarIcon className="text-amber-500" />
               Favoritos
             </SidebarMenuButton>
           </SidebarMenuItem>
