@@ -16,7 +16,7 @@ const topics = [
   {
     title: "En caso de duda",
     rule: "Regla 20.1c(3)",
-    image: "/rules/bases-y-dropear/caso-de-duda.png",
+    image: "/rules/realistas/caso-de-duda-realista.jpg",
     text: "En juego por golpes, si tienes duda sobre el procedimiento correcto, puedes jugar dos bolas y pedir una decisión antes de entregar la tarjeta. Debes anunciar qué bola quieres que cuente si las Reglas permiten escoger, antes de jugarla.",
   },
   {
@@ -70,7 +70,7 @@ const topics = [
   {
     title: "Dropear en lugar equivocado",
     rule: "Regla 14.7",
-    image: "/rules/bases-y-dropear/lugar-equivocado.png",
+    image: "/rules/realistas/dropear-lugar-equivocado-realista.jpg",
     text: "El área de alivio siempre se mide desde el punto de referencia que determine la Regla aplicable y no puede estar más cerca del hoyo cuando esa limitación aplique. Jugar desde un lugar equivocado puede implicar la penalización general y, en algunos casos, requiere corregir el error.",
   },
   {
