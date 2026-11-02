@@ -95,7 +95,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         {item.items.map((item) => (
                           <SidebarMenuSubItem key={item.title}>
                             <SidebarMenuSubButton
-                              className="h-auto min-h-11 whitespace-normal py-2.5 leading-5"
+                              className="h-auto min-h-10 whitespace-normal py-1.5 leading-5"
                               render={<a href={item.url} />}
                             >
                               {item.title}
