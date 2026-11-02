@@ -122,7 +122,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton render={<a href="#" />}>
+            <SidebarMenuButton render={<a href="/favoritas" />}>
               <HeartIcon />
               Favoritos
             </SidebarMenuButton>

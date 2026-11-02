@@ -3,6 +3,7 @@
 import Image from "next/image"
 import * as React from "react"
 import { ChevronDownIcon, ExternalLinkIcon } from "lucide-react"
+import { FavoriteButton, favoriteId } from "@/components/favorite-button"
 
 const usgaRulesUrl = "https://www.usga.org/rules/rules-and-clarifications/rules-and-clarifications.html"
 
@@ -54,7 +55,10 @@ export function TeeingAreaSection() {
                   </div>
                   <div className="flex flex-col justify-center">
                     <p className="text-base leading-7 text-foreground">{topic.description}</p>
-                    <a href={usgaRulesUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex w-fit items-center gap-2 text-sm font-semibold text-emerald-800 hover:text-emerald-600">Consultar {topic.rule} en USGA <ExternalLinkIcon className="size-4" /></a>
+                    <div className="mt-5 flex flex-wrap items-center gap-3">
+                      <a href={usgaRulesUrl} target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-emerald-800 hover:text-emerald-600">Consultar {topic.rule} en USGA <ExternalLinkIcon className="size-4" /></a>
+                      <FavoriteButton favorite={{ ...topic, id: favoriteId("/dashboard/mesa-de-salida", topic.title, topic.rule), section: "Mesas de salida", sectionHref: "/dashboard/mesa-de-salida" }} />
+                    </div>
                   </div>
                 </div>
               ) : null}

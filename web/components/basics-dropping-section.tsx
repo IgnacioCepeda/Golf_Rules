@@ -3,6 +3,7 @@
 import Image from "next/image"
 import * as React from "react"
 import { ChevronDownIcon, ExternalLinkIcon } from "lucide-react"
+import { FavoriteButton, favoriteId } from "@/components/favorite-button"
 
 const usgaRulesUrl = "https://www.usga.org/rules/rules-and-clarifications/rules-and-clarifications.html"
 
@@ -120,7 +121,10 @@ export function BasicsDroppingSection() {
                   </div>
                   <div className="flex flex-col justify-center">
                     <p className="text-sm leading-7 text-foreground">{topic.text}</p>
-                    <a href={usgaRulesUrl} target="_blank" rel="noreferrer" className="mt-4 inline-flex w-fit items-center gap-2 text-sm font-semibold text-emerald-800 hover:text-emerald-600">Consultar {topic.rule} en USGA <ExternalLinkIcon className="size-4" /></a>
+                    <div className="mt-4 flex flex-wrap items-center gap-3">
+                      <a href={usgaRulesUrl} target="_blank" rel="noreferrer" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-emerald-800 hover:text-emerald-600">Consultar {topic.rule} en USGA <ExternalLinkIcon className="size-4" /></a>
+                      <FavoriteButton favorite={{ ...topic, description: topic.text, id: favoriteId("/dashboard/bases-y-dropear", topic.title, topic.rule), section: "Bases y dropear", sectionHref: "/dashboard/bases-y-dropear" }} />
+                    </div>
                   </div>
                 </div>
               ) : null}

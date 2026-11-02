@@ -20,4 +20,4 @@ const topics = [
   { title: "Putt desde lugar equivocado", rule: "Regla 14.7", image: "/rules/realistas/green-equivocado-realista-v2.jpg", description: "Si juegas desde un lugar equivocado, detente y corrige el procedimiento. En juego por golpes, una infracción grave puede requerir corregir antes de iniciar el siguiente hoyo." },
 ] as const
 
-export default function GreenPage() { return <RulesPageLayout title="Green"><RuleTopicsSection title="Green" intro="Reglas para marcar, reparar y jugar la bola en el green del hoyo." topics={topics} /><SectionNavigation previous={{ href: "/dashboard/areas-de-penalizacion", label: "Áreas de penalidad" }} /></RulesPageLayout> }
+export default function GreenPage() { return <RulesPageLayout title="Green"><RuleTopicsSection title="Green" intro="Reglas para marcar, reparar y jugar la bola en el green del hoyo." topics={topics} sectionHref="/dashboard/green" /><SectionNavigation previous={{ href: "/dashboard/areas-de-penalizacion", label: "Áreas de penalidad" }} /></RulesPageLayout> }
