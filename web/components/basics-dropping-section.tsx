@@ -71,7 +71,7 @@ const topics = [
     title: "Dropear en lugar equivocado",
     rule: "Regla 14.7",
     image: "/rules/realistas/dropear-lugar-equivocado-realista.jpg",
-    text: "El área de alivio siempre se mide desde el punto de referencia que determine la Regla aplicable y no puede estar más cerca del hoyo cuando esa limitación aplique. Jugar desde un lugar equivocado puede implicar la penalización general y, en algunos casos, requiere corregir el error.",
+    text: "El área de alivio siempre se mide desde el punto de referencia que determine la Regla aplicable y no puede estar más cerca del hoyo cuando esa limitación aplique. Jugar desde un lugar equivocado puede implicar la penalización general: en juego por golpes, dos golpes de penalización; en match play, pérdida del hoyo. En algunos casos también requiere corregir el error.",
   },
   {
     title: "Dropear de manera incorrecta",
