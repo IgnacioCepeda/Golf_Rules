@@ -12,7 +12,6 @@ import {
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarGroup,
   SidebarHeader,
   SidebarMenu,
@@ -27,14 +26,6 @@ import { BookOpenCheckIcon, MinusIcon, PlusIcon, StarIcon } from "lucide-react"
 
 const data = {
   navMain: [
-    {
-      title: "Guía rápida",
-      url: "#",
-      items: [
-        { title: "Cómo usar la guía", url: "#" },
-        { title: "Antes de empezar", url: "#" },
-      ],
-    },
     {
       title: "Reglas por situación",
       url: "#",
@@ -80,10 +71,16 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <SidebarGroup>
           <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton render={<a href="/favoritas" />}>
+                <StarIcon className="text-amber-500" />
+                Favoritos
+              </SidebarMenuButton>
+            </SidebarMenuItem>
             {data.navMain.map((item, index) => (
               <Collapsible
                 key={item.title}
-                defaultOpen={index === 1}
+                defaultOpen={index === 0}
                 className="group/collapsible"
               >
                 <SidebarMenuItem>
@@ -98,6 +95,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                         {item.items.map((item) => (
                           <SidebarMenuSubItem key={item.title}>
                             <SidebarMenuSubButton
+                              className="h-auto min-h-11 whitespace-normal py-2.5 leading-5"
                               render={<a href={item.url} />}
                             >
                               {item.title}
@@ -112,28 +110,22 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
             ))}
           </SidebarMenu>
         </SidebarGroup>
+        <SidebarGroup className="pt-2">
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton render={<a href="https://www.usga.org/rules/rules-and-clarifications/rules-and-clarifications.html" target="_blank" rel="noreferrer" />}>
+                <BookOpenCheckIcon />
+                Reglamento actualizado
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+            <SidebarMenuItem>
+              <SidebarMenuButton render={<a href="/acerca-de" />}>
+                Acerca de
+              </SidebarMenuButton>
+            </SidebarMenuItem>
+          </SidebarMenu>
+        </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter>
-        <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton render={<a href="#" />}>
-              <BookOpenCheckIcon />
-              Reglamento actualizado
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton render={<a href="/favoritas" />}>
-              <StarIcon className="text-amber-500" />
-              Favoritos
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-          <SidebarMenuItem>
-            <SidebarMenuButton render={<a href="/acerca-de" />}>
-              Acerca de
-            </SidebarMenuButton>
-          </SidebarMenuItem>
-        </SidebarMenu>
-      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   )
