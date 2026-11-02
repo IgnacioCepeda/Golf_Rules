@@ -20,7 +20,7 @@ export default function AboutPage() {
           <dl className="mt-6 space-y-3 text-sm">
             <div className="flex justify-between gap-4 border-b border-white/10 pb-3">
               <dt className="text-neutral-400">Versión</dt>
-              <dd className="font-medium">0.10.0</dd>
+              <dd className="font-medium">0.10.1</dd>
             </div>
             <div className="flex justify-between gap-4">
               <dt className="text-neutral-400">Desarrollo</dt>
